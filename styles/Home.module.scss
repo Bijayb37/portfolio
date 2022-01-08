@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.intro {
+  .myName {
+    font-weight: 500;
+    font-size: 42px;
+    text-align: center;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    .button {
+      flex: 1 0 50%;
+      border: 2px solid lightblue;
+      background-color: white;
+      color: lightblue;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      font-size: 25px;
+      &:hover {
+        background-color: lightblue;
+        color: white;
+      }
+    }
+  }
+
+}
