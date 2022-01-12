@@ -13,9 +13,9 @@ export default function ProjectCard({ data, index }) {
   }, index);
 
   return (
-    // <a href={demoUrl}>
-    <div ref={containerRef}>
-        <div className={`${styles.card} ${styles[position]}`} style={{ backgroundColor: bgColors[index % 4]}}>
+    <a href={demoUrl}>
+      <div ref={containerRef}>
+        <div className={`${styles.card} ${styles[position]}`} style={{ backgroundColor: bgColors[index % 4] }}>
           <div className={styles.info}>
             <h1 className={styles.title}>{title}</h1>
             <div className={styles.secondary}>
@@ -38,8 +38,7 @@ export default function ProjectCard({ data, index }) {
             <img src={imageUrl} alt={title} />
           </div>
         </div>
-    </div>
-
-    // </a>
+      </div>
+    </a>
   )
 }
