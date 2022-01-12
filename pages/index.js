@@ -12,7 +12,7 @@ export default function Index() {
       <title>Bijay Bohora</title>
       <script src="https://kit.fontawesome.com/973ad33301.js" crossOrigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
       </Head>
       <Home />
