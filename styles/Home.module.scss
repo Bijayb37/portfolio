@@ -2,14 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  height: 100vh;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  transform: translateY(100px);
 }
-
+@keyframes fadeIn {
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
 .intro {
   .myName {
     font-weight: 500;
     font-size: 42px;
     text-align: center;
+    margin: 0px;
+    font-family: lora, serif;
+
   }
   .buttons {
     display: flex;
@@ -17,18 +28,20 @@
     width: 50vw;
     .button {
       flex: 1 0 50%;
-      border: 2px solid lightblue;
+      border: 2px solid #ce7882;
       background-color: white;
-      color: lightblue;
+      color: #ce7882;
       padding: 10px;
-      margin: 10px;
+      margin-right: 10px;
       border-radius: 5px;
       font-size: 25px;
+      text-align: center;
       &:hover {
-        background-color: lightblue;
+        background-color: #ce7882;
         color: white;
       }
     }
   }
+
 
 }

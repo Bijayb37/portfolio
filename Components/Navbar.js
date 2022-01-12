@@ -10,9 +10,9 @@ export default function Navbar() {
           Bijay Bohora
         </div>
         <div className={styles.linksMenu}>
-          <ScrollLink containerId="containerElement" activeClass={styles.active} offset={-50} to="home" spy={true} >Home</ScrollLink>
-          <ScrollLink containerId="containerElement" activeClass={styles.active} offset={-50} to="projects" spy={true} >Projects</ScrollLink>
-          <ScrollLink containerId="containerElement" activeClass={styles.active} offset={-50} to="about" spy={true} >About</ScrollLink>
+          <ScrollLink activeClass={styles.active} offset={-50} to="home" spy={true} smooth={true}>Home</ScrollLink>
+          <ScrollLink activeClass={styles.active} offset={-50} to="projects" spy={true} smooth={true}>Projects</ScrollLink>
+          <ScrollLink activeClass={styles.active} offset={-50} to="about" spy={true} smooth={true}>About</ScrollLink>
         </div>
       </div>
     </nav>
