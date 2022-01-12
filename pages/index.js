@@ -11,11 +11,11 @@ export default function Index() {
     <div className={styles.app}>
       <Head>
       <title>Bijay Bohora</title>
-      <Script src="https://kit.fontawesome.com/973ad33301.js" crossOrigin="anonymous"></Script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
       </Head>
+      <Script src="https://kit.fontawesome.com/973ad33301.js" crossOrigin="anonymous"></Script>
       <Home />
       <Navbar />
       <div className={styles.sections}>
