@@ -20,7 +20,9 @@
     text-align: center;
     margin: 0px;
     font-family: lora, serif;
-
+    @media (max-height: 768px) {
+      font-size: 2em;
+    }
   }
   .buttons {
     display: flex;
@@ -40,6 +42,13 @@
         background-color: #ce7882;
         color: white;
       }
+      @media (max-width: 768px) {
+        margin-top: 10px;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100vw;
+      flex-direction: column;
     }
   }
 
