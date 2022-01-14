@@ -19,6 +19,7 @@ export default function Projects() {
         <p>PROJECTS</p>
         <div className={`${styles.line} ${styles[position]}`}></div>
       </div>
+        <p className={styles.click}>To View Projects Click On The Title In The Card</p>
       <div className={styles.cardContainer}>
         {cards}
       </div>
