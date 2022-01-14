@@ -60,6 +60,10 @@
   .title {
     font-size: 38px;
     margin: 0px;
+    &:hover {
+      transform: scale(1.05);
+      text-decoration: underline;
+    }
   }
   .secondary {
     height: 100%;

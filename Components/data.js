@@ -8,8 +8,8 @@ export const projectData = [
   },
   {
     title: "Twit Social Media App",
-    demoUrl: "https://bb-issuetracker.netlify.app",
-    imageUrl: "/issueTracker.png",
+    demoUrl: "https://bb-twit.netlify.app",
+    imageUrl: "/twit.png",
     role: ["full stack developer"],
     tech: ['react', 'redux', 'node']
   },
