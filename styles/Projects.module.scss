@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  
   flex-direction: column;
   padding: 60px;
   overflow: hidden;
@@ -7,6 +8,9 @@
     padding: 0px;
   }
   .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media (max-width: 768px) {
       padding: 20px;
     }
