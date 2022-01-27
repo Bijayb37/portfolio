@@ -1,4 +1,4 @@
-import styles from '../styles/Navbar.module.scss';
+import styles from '../styles/Navbar.module.scss'
 import { Link as ScrollLink } from 'react-scroll'
 
 export default function Navbar() {
@@ -11,8 +11,8 @@ export default function Navbar() {
         </div>
         <div className={styles.linksMenu}>
           <ScrollLink activeClass={styles.active} offset={-50} to="home" spy={true} smooth={true}>Home</ScrollLink>
-          <ScrollLink activeClass={styles.active} offset={-50} to="projects" spy={true} smooth={true}>Projects</ScrollLink>
           <ScrollLink activeClass={styles.active} offset={-50} to="about" spy={true} smooth={true}>About</ScrollLink>
+          <ScrollLink activeClass={styles.active} offset={-50} to="projects" spy={true} smooth={true}>Projects</ScrollLink>
         </div>
       </div>
     </nav>

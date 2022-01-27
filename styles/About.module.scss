@@ -1,10 +1,49 @@
 .main {
-  padding: 60px 60px 0px;
+  padding: 50px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media (max-width: 768px) {
     padding: 0px;
+  }
+  .text {
+    width: 50%;
+    font-size: 18px;
+    font-family: lora, serif;
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  }
+  .text.intersecting, .list.intersecting {
+    transform: translateY(100px);
+    animation: upFade 1s both;
+    @keyframes upFade {
+      to {
+        transform: translateY(0px);
+      }
+    }
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 20px;
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      &::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: #008e81;
+        font-size: 1em;
+      }
+    }
   }
   .header {
     margin-bottom: 20px;
@@ -38,29 +77,37 @@
       }
     }
   }
-  .text {
-    width: 50%;
-    font-size: 18px;
-    font-family: lora, serif;
-    margin-bottom: 50px;
+  .buttons {
+    display: flex;
+    align-items: center;
+    // width: 50%;
     @media (max-width: 768px) {
-      width: 80%
+      flex-direction: column;
+      margin: 0px;
     }
-  }
-  .text.intersecting {
-    transform: translateY(100px);
-    animation: upFade 2s both;
-    @keyframes upFade {
-      to {
-        transform: translateY(0px);
+    .button {
+      flex: 1 0 50%;
+      border: 1px solid #ce7882;
+      color: #ce7882;
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: 5px;
+      font-size: 25px;
+      text-align: center;
+      &:hover {
+        background-color: #ce7882;
+        color: white;
+      }
+      @media (max-width: 768px) {
+        margin-top: 10px;
       }
     }
   }
+
   footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 100px;
     width: 100vw;
     background-color: #d8cfbc;
@@ -68,10 +115,9 @@
       font-size: 2rem;
       margin: 20px;
       @media (max-width: 768px) {
-          font-size: 1rem;
-          margin: 20px;
+        font-size: 1rem;
+        margin: 20px;
       }
     }
-
   }
 }

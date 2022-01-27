@@ -6,8 +6,13 @@ export default function Layout({ children }) {
 
   return (
     <div className={styles.layouts}>
-        <Navbar />
+      <div className={styles.leftSide}>
+        
+      </div>
       <main>{children}</main>
+      <div className={styles.rightSide}>
+
+      </div>
     </div>
   )
 }

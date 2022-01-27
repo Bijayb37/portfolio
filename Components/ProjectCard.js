@@ -14,7 +14,7 @@ export default function ProjectCard({ data, index }) {
   return (
 
     <div ref={containerRef}>
-      <div className={styles.card}>
+      <div className={`${styles.card} ${styles[position]}`}>
         <div className={styles.graphics}>
           <img src={imageUrl} alt={title} />
         </div>
@@ -29,7 +29,7 @@ export default function ProjectCard({ data, index }) {
               <li key={t}>{t}</li>
             ))}
           </ul>
-          <div className={styles.tech}>
+          <div className={styles.links}>
             <a href={githubUrl} target="_blank">Github</a>
             <a href={demoUrl} target="_blank">Live App</a>
           </div>

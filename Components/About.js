@@ -16,18 +16,31 @@ export default function About() {
         <div className={`${styles.line} ${styles[position]}`}></div>
       </div>
       <p className={`${styles.text} ${styles[position]}`}>
-        Hello! My name is Bijay Bohora, I am a full stack developer primarily
-        using React and NodeJS, I have been developing with react for 2 years+,
-        My educational background is a bachelors in Computer Science with a data science major,
-        in addition to multiple udemy courses to further improve my skills in react, redux, nodeJS.
-        I have created projects using React and front end css
-        frameworks such as bootstrap and material-ui, with a nodeJS backend,
-        using ExpressJS and a mongoDB database.
+        My educational background is a bachelors in Computer Science with a data science major, in addition to
+        multiple courses from places such as udemy and coursea, primarily web development focused but
+        also a few courses on machine learning and reinforcement learning.
+        I have been developing websites since 2017, and am always aiming to improve my skills, here are
+        a few technologies that i have been working with recently.
       </p>
-      <footer>
-        <i className="far fa-envelope-open"> bijayb37@gmail.com</i>
-        <i className="fab fa-github"> github.com/Bijayb37</i>
-      </footer>
+      <ul className={`${styles.list} ${styles[position]}`}>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>Redux</li>
+        <li>MongoDB</li>
+        <li>Next.js</li>
+        <li>Bootstrap/Material-UI</li>
+      </ul>
+      <p className={`${styles.text} ${styles[position]}`}>
+        I enjoy problem solving and learning, and learning new technologies and creating web
+        applications is a very good driver of those passions. I also am very interested in subjects
+        such as AI, Music (piano & guitar), and Finance among other things.
+      </p>
+      <div className={styles.buttons}>
+        <a className={styles.button} href='/resume.pdf' target="_blank">View My Resume</a>
+        <a className={styles.button} href='https://github.com/Bijayb37' target="_blank">View My GitHub</a>
+      </div>
     </Element>
   )
 }

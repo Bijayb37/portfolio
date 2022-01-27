@@ -1,11 +1,15 @@
 .main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0px 150px;
   height: 100vh;
   opacity: 0;
   animation: fadeIn 2s forwards;
   transform: translateY(100px);
+  @media (max-width: 768px) {
+    padding: 0px 30px;
+  }
 }
 @keyframes fadeIn {
   to {
@@ -16,22 +20,33 @@
 .intro {
   .myName {
     font-weight: 500;
-    font-size: 42px;
-    text-align: center;
+    font-size: 50px;
+    // text-align: center;
     margin: 0px;
     font-family: lora, serif;
-    @media (max-height: 768px) {
+    span {
+      font-size: 80px;
+    }
+    @media (max-width: 768px) {
       font-size: 2em;
     }
+  }
+  .info {
+    max-width: 540px;
+    margin: 20px 0px 20px;
+    font-size: 20px;
+    color: rgb(136, 146, 176);
   }
   .buttons {
     display: flex;
     align-items: center;
-    width: 50vw;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin: 0px;
+    }
     .button {
       flex: 1 0 50%;
       border: 2px solid #ce7882;
-      background-color: white;
       color: #ce7882;
       padding: 10px;
       margin-right: 10px;
@@ -46,11 +61,5 @@
         margin-top: 10px;
       }
     }
-    @media (max-width: 768px) {
-      width: 100vw;
-      flex-direction: column;
-    }
   }
-
-
 }

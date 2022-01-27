@@ -19,8 +19,8 @@ export default function Index() {
       <Home />
       <Navbar />
       <div className={styles.sections}>
-        <Projects />
         <About />
+        <Projects />
       </div>
     </div>
   )
