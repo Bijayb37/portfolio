@@ -10,6 +10,9 @@
   @media (max-width: 768px) {
     padding: 0px 30px;
   }
+  @media (min-width: 1350px) {
+    justify-content: center;
+  }
 }
 @keyframes fadeIn {
   to {

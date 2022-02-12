@@ -22,6 +22,9 @@
     @media (max-width: 768px) {
       flex-direction: column;
     }
+    @media (min-width: 1250px) {
+      padding: 0px 100px;
+    }
   }
   .click {
     flex-basis: 100%;
