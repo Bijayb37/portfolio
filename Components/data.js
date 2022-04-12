@@ -1,5 +1,14 @@
 export const projectData = [
   {
+    title: "F.R.I.E.N.D.S Group Chat App",
+    demoUrl: "https://firebase-chatrooms.vercel.app/",
+    githubUrl: "https://github.com/Bijayb37/Firebase-chatrooms",
+    description: "An App to create chatrooms of one or more people, with authentication by firebase",
+    imageUrl: "/chatapp.png",
+    role: ["full stack developer"],
+    tech: ['react', 'nextJS', 'TypeScript', 'Chakra-UI', 'Firebase Auth', 'FireStore']
+  },
+  {
     title: "Issue Tracker",
     demoUrl: "https://bb-issuetracker.netlify.app",
     githubUrl: "https://github.com/Bijayb37/Issue-Tracker",
